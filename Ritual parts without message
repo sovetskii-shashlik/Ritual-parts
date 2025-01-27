@@ -376,20 +376,20 @@ end)
 -- Button functionality
 ToggleButton.MouseButton1Click:Connect(function()
     ringPartsEnabled = not ringPartsEnabled
-    ToggleButton.Text = ringPartsEnabled and "Ring Parts On" or "Ring Parts Off"
-    ToggleButton.BackgroundColor3 = ringPartsEnabled and Color3.fromRGB(50, 205, 50) or Color3.fromRGB(160, 82, 45)
+    ToggleButton.Text = ringPartsEnabled and "Вкл" or "Выкл"
+    ToggleButton.BackgroundColor3 = ringPartsEnabled and Color3.fromRGB(50, 205, 50) or Color3.fromRGB(255, 255, 153)
     playSound("12221967")
 end)
 
 DecreaseRadius.MouseButton1Click:Connect(function()
     radius = math.max(0, radius - 5)
-    RadiusDisplay.Text = "Radius: " .. radius
+    RadiusDisplay.Text = "Радиус: " .. radius
     playSound("12221967")
 end)
 
 IncreaseRadius.MouseButton1Click:Connect(function()
     radius = math.min(10000, radius + 5)
-    RadiusDisplay.Text = "Radius: " .. radius
+    RadiusDisplay.Text = "Радиус: " .. radius
     playSound("12221967")
 end)
 
@@ -436,7 +436,3 @@ local function SendChatMessage(message)
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
     end
 end
-
--- Send the chat message
-SendChatMessage("")
-SendChatMessage("")
