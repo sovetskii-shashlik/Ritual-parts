@@ -422,7 +422,7 @@ StarterGui:SetCore("SendNotification", {
 
 StarterGui:SetCore("SendNotification", {
     Title = "Credits",
-    Text = "Отредактировал преспешник шашлыка",
+    Text = "Отредактировал прЕспешник Шашлыка",
     Icon = content,
     Duration = 5
 })
