@@ -101,7 +101,7 @@ playSound("2865227271")
 
 -- GUI Creation
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "SuperRingPartsGUI"
+ScreenGui.Name = "Гуишка ёпта"
 ScreenGui.ResetOnSpawn = false
 ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
 
@@ -135,7 +135,7 @@ TitleCorner.Parent = Title
 local ToggleButton = Instance.new("TextButton")
 ToggleButton.Size = UDim2.new(0.8, 0, 0, 35)
 ToggleButton.Position = UDim2.new(0.1, 0, 0.3, 0)
-ToggleButton.Text = "Off"
+ToggleButton.Text = "Выкл"
 ToggleButton.BackgroundColor3 = Color3.fromRGB(255, 255, 153) -- Red
 ToggleButton.TextColor3 = Color3.fromRGB(0, 0, 0) -- White
 ToggleButton.Font = Enum.Font.Fondamento
@@ -150,7 +150,7 @@ ToggleCorner.Parent = ToggleButton
 local DecreaseRadius = Instance.new("TextButton")
 DecreaseRadius.Size = UDim2.new(0.2, 0, 0, 35)
 DecreaseRadius.Position = UDim2.new(0.1, 0, 0.6, 0)
-DecreaseRadius.Text = "<"
+DecreaseRadius.Text = "-"
 DecreaseRadius.BackgroundColor3 = Color3.fromRGB(153, 153, 0) -- Yellow
 DecreaseRadius.TextColor3 = Color3.fromRGB(0, 0, 0) -- White
 DecreaseRadius.Font = Enum.Font.Fondamento
@@ -165,7 +165,7 @@ DecreaseCorner.Parent = DecreaseRadius
 local IncreaseRadius = Instance.new("TextButton")
 IncreaseRadius.Size = UDim2.new(0.2, 0, 0, 35)
 IncreaseRadius.Position = UDim2.new(0.7, 0, 0.6, 0)
-IncreaseRadius.Text = ">"
+IncreaseRadius.Text = "+"
 IncreaseRadius.BackgroundColor3 = Color3.fromRGB(153, 153, 0) -- Yellow
 IncreaseRadius.TextColor3 = Color3.fromRGB(0, 0, 0) -- White
 IncreaseRadius.Font = Enum.Font.Fondamento
