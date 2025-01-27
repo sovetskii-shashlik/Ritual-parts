@@ -120,7 +120,7 @@ UICorner.Parent = MainFrame
 local Title = Instance.new("TextLabel")
 Title.Size = UDim2.new(1, 0, 0, 40)
 Title.Position = UDim2.new(0, 0, 0, 0)
-Title.Text = "FE Ritual Parts"
+Title.Text = "FE Ритуал Партс"
 Title.TextColor3 = Color3.fromRGB(0, 0, 0) -- White
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 102) -- Little dark green
 Title.Font = Enum.Font.Fondamento -- More elegant font
@@ -400,7 +400,7 @@ local thumbSize = Enum.ThumbnailSize.Size420x420
 local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
 
 StarterGui:SetCore("SendNotification", {
-    Title = "FE rituals Parts",
+    Title = "FE Ритуал Партс ёпта",
     Text = "enjoy",
     Icon = content,
     Duration = 5
@@ -408,21 +408,35 @@ StarterGui:SetCore("SendNotification", {
 
 StarterGui:SetCore("SendNotification", {
     Title = "Credits",
-    Text = "Original By Chatgpt",
+    Text = "оригинальный код от чата жопати",
     Icon = content,
     Duration = 5
 })
 
 StarterGui:SetCore("SendNotification", {
     Title = "Credits",
-    Text = "Cracked By Project LKB!",
+    Text = "Вторично крякнуто педиком",
     Icon = content,
     Duration = 5
 })
 
 StarterGui:SetCore("SendNotification", {
     Title = "Credits",
-    Text = "Edited By lukas",
+    Text = "Отредактировал преспешник шашлыка",
     Icon = content,
     Duration = 5
 })
+
+-- Chat message (Updated for new chat system)
+local function SendChatMessage(message)
+    if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+        local textChannel = TextChatService.TextChannels.RBXGeneral
+        textChannel:SendAsync(message)
+    else
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
+    end
+end
+
+-- Send the chat message
+SendChatMessage("")
+SendChatMessage("")
