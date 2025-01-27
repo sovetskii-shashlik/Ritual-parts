@@ -377,7 +377,7 @@ end)
 ToggleButton.MouseButton1Click:Connect(function()
     ringPartsEnabled = not ringPartsEnabled
     ToggleButton.Text = ringPartsEnabled and "Вкл" or "Выкл"
-    ToggleButton.BackgroundColor3 = ringPartsEnabled and Color3.fromRGB(50, 205, 50) or Color3.fromRGB(255, 255, 153)
+    ToggleButton.BackgroundColor3 = ringPartsEnabled and Color3.fromRGB(255, 0, 0) or Color3.fromRGB(255, 255, 153)
     playSound("12221967")
 end)
 
