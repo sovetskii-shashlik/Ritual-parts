@@ -180,7 +180,7 @@ IncreaseCorner.Parent = IncreaseRadius
 local RadiusDisplay = Instance.new("TextLabel")
 RadiusDisplay.Size = UDim2.new(0.4, 0, 0, 35)
 RadiusDisplay.Position = UDim2.new(0.3, 0, 0.6, 0)
-RadiusDisplay.Text = "Radius: 25"
+RadiusDisplay.Text = "Радиус: 25"
 RadiusDisplay.BackgroundColor3 = Color3.fromRGB(255, 153, 51) -- Yellow
 RadiusDisplay.TextColor3 = Color3.fromRGB(0, 0, 0) -- White
 RadiusDisplay.Font = Enum.Font.Fondamento
@@ -195,7 +195,7 @@ RadiusCorner.Parent = RadiusDisplay
 local Watermark = Instance.new("TextLabel")
 Watermark.Size = UDim2.new(1, 0, 0, 20)
 Watermark.Position = UDim2.new(0, 0, 1, -20)
-Watermark.Text = "FE Ritual Part script By lukas!"
+Watermark.Text = "FE Ритуал Партс от Шашлыка (педика)"
 Watermark.TextColor3 = Color3.fromRGB(0, 0, 0) -- Dark brown
 Watermark.BackgroundTransparency = 1
 Watermark.Font = Enum.Font.Fondamento
@@ -403,28 +403,28 @@ StarterGui:SetCore("SendNotification", {
     Title = "FE Ритуал Партс ёпта",
     Text = "enjoy",
     Icon = content,
-    Duration = 5
+    Duration = 10
 })
 
 StarterGui:SetCore("SendNotification", {
     Title = "Credits",
     Text = "оригинальный код от чата жопати",
     Icon = content,
-    Duration = 5
+    Duration = 10
 })
 
 StarterGui:SetCore("SendNotification", {
     Title = "Credits",
     Text = "Вторично крякнуто педиком",
     Icon = content,
-    Duration = 5
+    Duration = 10
 })
 
 StarterGui:SetCore("SendNotification", {
     Title = "Credits",
     Text = "Отредактировал прЕспешник Шашлыка",
     Icon = content,
-    Duration = 5
+    Duration = 10
 })
 
 -- Chat message (Updated for new chat system)
